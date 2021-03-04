@@ -1,4 +1,7 @@
-# GMDprivateServer
+# GMDprivateServer 
+
+[Original Repo](https://github.com/Cvolton/GMDprivateServer)
+
 ## Geometry Dash Private Server
 Basically a Geometry Dash Server Emulator
 
