@@ -24,7 +24,6 @@ if (isset($_POST['udid']) && !empty($_POST['udid'])) {
 		exit("-1");
 	}
 }
-//Coloured description crash exploit patch
 $levelDesc = str_replace('-', '+', $levelDesc);
 $levelDesc = str_replace('_', '/', $levelDesc);
 $rawDesc = base64_decode($levelDesc);
