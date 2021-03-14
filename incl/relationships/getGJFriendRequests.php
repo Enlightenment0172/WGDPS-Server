@@ -49,7 +49,7 @@ foreach($result as &$request) {
 	$query->execute([':requester' => $requester]);
 	$result2 = $query->fetchAll();
 	$user = $result2[0];
-	$uploadTime = date("d/m/Y G.i", $request["uploadDate"]);
+	$uploadTime = mainLib::makeTime(time() - $request["uploadDate"]);
 	if(is_numeric($user["extID"])){
 		$extid = $user["extID"];
 	}else{
@@ -61,4 +61,3 @@ foreach($result as &$request) {
 $reqstring = substr($reqstring, 0, -1);
 echo $reqstring;
 echo "#".$reqcount.":".$offset.":10";
-?>
