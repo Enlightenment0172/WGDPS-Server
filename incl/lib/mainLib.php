@@ -38,7 +38,7 @@ class mainLib {
 			"Round 1 by Dex Arson",
 			"Monster Dance Off by F-777"];
 		if($id < 0 || $id >= count($songs))
-			return "Unknown by DJVI";
+			return "Unknown by Unknown";
 		return $songs[$id];
 	}
 	public function getDifficulty($diff,$auto,$demon) {
